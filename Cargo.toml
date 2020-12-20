@@ -2,7 +2,9 @@
 name = "spar-rs"
 version = "0.0.1"
 authors = ["Elizabeth Marston <liz.mars@pm.me>"]
+repository = "https://github.com/elmarsto/spar-rs"
 edition = "2018"
+license-file = "LICENSE"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
