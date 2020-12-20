@@ -1,9 +1,7 @@
 mod utils;
-
 use wasm_bindgen::prelude::*;
-use web_sys::*;
 use utils::*;
-use tastie::*;
+use js_sys::{ JsString };
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
@@ -12,8 +10,8 @@ use tastie::*;
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
-pub fn translate(ast: &Tastie) {
+pub fn translate() -> JsString {
     set_panic_hook();
-    ast.translate();
+    JsString::from("hello, world!")
 }
 
