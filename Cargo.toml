@@ -1,5 +1,6 @@
 [package]
 name = "spar-rs"
+description = "generate rust bindings from a typescript .d.ts"
 version = "0.0.1"
 authors = ["Elizabeth Marston <liz.mars@pm.me>"]
 repository = "https://github.com/elmarsto/spar-rs"
