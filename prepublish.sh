@@ -3,4 +3,4 @@
 rm -rf ./pkg
 wasm-pack build --target=nodejs
 wasm-pack pack
-wasm-pack publish
+#wasm-pack publish
