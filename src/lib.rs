@@ -8,7 +8,7 @@ use js_sys::{ JsString };
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
-pub fn translate() -> JsString {
-    JsString::from("hello, world!")
+pub fn translate(dts: &str) -> JsString {
+    JsString::from(dts)
 }
 
